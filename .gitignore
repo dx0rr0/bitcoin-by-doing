@@ -1,4 +1,4 @@
-# Entorno y estado del laboratorio
+# Environment and lab state
 .local/
 .venv/
 venv/
@@ -13,7 +13,7 @@ htmlcov/
 build/
 dist/
 
-# Credenciales y archivos de wallet: nunca forman parte de los ejercicios publicados
+# Credentials and wallet files never belong in published exercises
 .env
 .env.*
 !.env.example
@@ -31,7 +31,7 @@ indexes/
 *.key
 *.log
 
-# Archivos locales del editor y sistema
+# Local editor and system files
 .idea/
 .vscode/
 .DS_Store

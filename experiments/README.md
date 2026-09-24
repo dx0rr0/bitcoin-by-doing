@@ -1,7 +1,7 @@
-# Experimentos
+# Experiments
 
-Aquí irá el código que escribas durante las sesiones. La primera consulta se hará en la [sesión 0](../docs/00-empezar-juntos.md).
+This is where the code you write during the sessions will go. The first query happens in [session 0](../docs/00-getting-started-together.md).
 
-Todavía no hay módulos, funciones vacías ni dependencias elegidas. Decide la estructura con el tutor cuando tengas un problema concreto que resolver. Si dos experimentos terminan repitiendo código, ese será un buen momento para valorar qué compartir.
+There are no modules, empty functions, or chosen dependencies yet. Decide on the structure with the tutor when you have a concrete problem to solve. If two experiments start repeating code, that is a good time to consider what to share.
 
-El estado del nodo y las wallets se guardan bajo `.local/`, fuera de esta carpeta y de Git. Se pueden conservar pequeñas muestras públicas de regtest cuando ayuden a repetir una comprobación; nunca cookies o claves.
+Node state and wallets live under `.local/`, outside this folder and Git. You can keep small samples of public regtest data when they help repeat a check, but never cookies or keys.

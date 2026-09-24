@@ -1,43 +1,43 @@
-# Recorrido y profundidad
+# Course outline and depth
 
-[Inicio](../README.md) · [Método](metodo.md) · [Progreso](progreso.md)
+[Home](../README.md) · [Learning method](learning-method.md) · [Progress](progress.md)
 
-El objetivo es poder seguir un pago, explicar las reglas relevantes y diseñar experimentos para comprobarlas. Las matemáticas de las curvas elípticas no son un requisito de entrada.
+The goal is to follow a payment, explain the relevant rules, and design experiments to check them. Elliptic curve mathematics is not an entry requirement.
 
-## Mapa de sesiones
+## Session map
 
-| Bloque | Sesión | Pregunta | Resultado que buscaremos |
+| Stage | Session | Question | What we'll aim for |
 | --- | --- | --- | --- |
-| Preparación | [0. Empezar juntos](00-empezar-juntos.md) | ¿Qué necesito para experimentar? | Entorno elegido y comprobado, arranque y parada entendidos, primera consulta de lectura. |
-| Observar | [1. Dónde están los bitcoins](01-donde-estan-los-bitcoins.md) | ¿De dónde sale el saldo? | Inventario propio de UTXO y explicación de las categorías del saldo. |
-| Observar | [2. Seguir un pago](02-seguir-un-pago.md) | ¿Qué se consume y qué se crea? | Reconstrucción de una transacción y su comisión a partir de sus datos. |
-| Observar | [3. De pendiente a confirmado](03-de-pendiente-a-confirmado.md) | ¿Qué cambia al entrar en un bloque? | Registro antes/después y seguimiento desde Python. |
-| Poner a prueba | 4. Gastos en conflicto | ¿Qué impide gastar dos veces? | Experimento con dos gastos del mismo UTXO; separar política de mempool y reglas de consenso. |
-| Poner a prueba | 5. Firmas y condiciones de gasto | ¿Qué autoriza una firma? | Firmar usando herramientas existentes y observar una modificación que invalida la autorización. Script y witness a nivel funcional. |
-| Implementar | 6. Bytes y transacciones | ¿Qué viaja por la red? | Parser propio para un formato acotado; comparación con Core. Límites explícitos respecto a SegWit y otros formatos. |
-| Implementar | 7. Cabeceras y trabajo | ¿Qué significa minar? | Parsear una cabecera y verificar su hash frente al objetivo. Experimento sencillo de búsqueda de nonce. |
-| Conectar | 8. Nodos y ramas | ¿Cómo convergen historias distintas? | Dos nodos regtest, ramas controladas y observación de una reorganización según trabajo acumulado. |
+| Preparation | [0. Getting started together](00-getting-started-together.md) | What do I need to experiment? | A chosen and verified environment, understood startup and shutdown steps, and a first read-only query. |
+| Observe | [1. Where are the bitcoins?](01-where-are-the-bitcoins.md) | Where does the balance come from? | Your own UTXO inventory and an explanation of balance categories. |
+| Observe | [2. Following a payment](02-following-a-payment.md) | What gets consumed and what gets created? | A reconstruction of a transaction and its fee from the underlying data. |
+| Observe | [3. From pending to confirmed](03-from-pending-to-confirmed.md) | What changes when a transaction enters a block? | Before-and-after observations and tracking from Python. |
+| Test assumptions | 4. Conflicting spends | What prevents double spending? | Two spends of the same UTXO; distinguish mempool policy from consensus rules. |
+| Test assumptions | 5. Signatures and spending conditions | What does a signature authorize? | Sign with existing tools and observe a modification that invalidates authorization. Understand the roles of Script and witness. |
+| Implement | 6. Bytes and transactions | What travels across the network? | Your own parser for a limited transaction format, compared with Core. Explicit limits regarding SegWit and other formats. |
+| Implement | 7. Headers and work | What does mining mean? | Parse a header and check its hash against the target. A simple nonce-search experiment. |
+| Connect | 8. Nodes and competing branches | How do different histories converge? | Two regtest nodes, controlled branches, and a reorganization based on accumulated work. |
 
-Las sesiones 0–3 están desarrolladas. Las sesiones 4–8 son objetivos de trabajo; sus guías se prepararán a partir de las dudas que aparezcan. No hay enlaces a lecciones que todavía no existen.
+Sessions 0–3 have full guides. Sessions 4–8 are learning goals; their guides will be written around the questions that come up. There are no links to lessons that do not exist yet.
 
-## Qué profundidad tendrá
+## How deep we'll go
 
-Al terminar el recorrido buscaremos que puedas:
+By the end, we'll aim for you to be able to:
 
-- Explicar wallet, clave, dirección, UTXO, transacción, mempool, bloque y nodo sin tratarlos como equivalentes.
-- Consultar y controlar nodos locales desde Python, leer errores y repetir un experimento.
-- Seguir los importes de una transacción hasta las salidas anteriores que gasta.
-- Entender para qué sirven firmas, condiciones de gasto y hashes, usando implementaciones existentes para la criptografía.
-- Implementar algunas piezas pequeñas de serialización y verificación, declarando qué formatos soportan.
-- Distinguir reglas de consenso, política de un nodo y decisiones de una wallet.
-- Leer un test funcional sencillo y proponer una variación que compruebe un comportamiento.
+- Explain wallets, keys, addresses, UTXOs, transactions, mempools, blocks, and nodes without treating them as interchangeable.
+- Query and control local nodes from Python, read errors, and repeat an experiment.
+- Trace transaction amounts back to the previous outputs being spent.
+- Understand the purpose of signatures, spending conditions, and hashes, using existing cryptographic implementations.
+- Implement small pieces of serialization and verification, stating which formats they support.
+- Distinguish consensus rules, node policy, and wallet decisions.
+- Read a simple functional test and propose a variation that checks a behavior.
 
-La demostración matemática de la seguridad criptográfica, una implementación completa de consenso, Taproot en profundidad, Lightning, privacidad avanzada y seguridad de wallets quedan fuera de estas ocho sesiones. Se pueden añadir después como recorridos separados.
+Mathematical proofs of cryptographic security, a complete consensus implementation, Taproot in depth, Lightning, advanced privacy, and wallet security are outside these eight sessions. They can become separate learning paths later.
 
-## Ritmo y cierre
+## Pace and completion
 
-Una sesión es una unidad de aprendizaje, no una obligación de terminar en una tarde. Reservar 60–90 minutos sirve para empezar; instalación, depuración o curiosidad pueden alargarla. Se puede partir una sesión en varios encuentros.
+A session is a unit of learning, not a requirement to finish in one afternoon. Setting aside 60–90 minutes is a reasonable starting point; installation, debugging, or curiosity may take longer. A session can span several meetings.
 
-Para avanzar hacen falta una observación reproducible y una explicación propia. Terminar de leer un archivo o ver que un script funciona no basta. El [método compartido](metodo.md) concreta cómo comprobarlo sin convertirlo en un examen.
+Moving on requires a reproducible observation and your own explanation. Reading a file or seeing a script work is not enough. The [shared method](learning-method.md) explains how to check understanding without turning it into an exam.
 
-Después habrá un [puente a open source](hacia-open-source.md): aprender a compilar y probar un repositorio real, leer su código y aportar una reproducción o un test pequeño. Completar el taller no garantiza que una contribución sea aceptada.
+Afterward, there is a [bridge to open source](contributing-to-open-source.md): learn to build and test a real repository, read its code, and contribute a reproduction or a small test. Completing the course does not guarantee that a contribution will be accepted.

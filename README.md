@@ -1,47 +1,47 @@
 # Bitcoin by doing
 
-Me gusta mucho Bitcoin y quiero entender cómo funciona por dentro. Empecé con *Programming Bitcoin*, pero la parte de matemáticas se me hizo cuesta arriba. Aquí voy a aprender haciendo experimentos en Python y volviendo a la teoría cuando la necesite.
+I'm a big Bitcoin fan, and I want to understand how it works under the hood. I started with *Programming Bitcoin*, but the maths got pretty heavy. Here I'm learning through Python experiments and coming back to the theory when I need it.
 
-El recorrido empieza con un nodo local de pruebas. Después vienen las transacciones, las firmas, los bloques y algunos experimentos con varios nodos. La criptografía se usa primero; sus matemáticas quedan para profundizar más adelante.
+The course starts with a local test node, then moves through transactions, signatures, blocks, and experiments with multiple nodes. I'll use cryptography first and leave its mathematical foundations for later.
 
-**Estado:** guías de las sesiones 0–3 preparadas. Los ejercicios todavía no están hechos y el entorno se comprobará en la sesión 0.
+**Status:** session guides 0–3 are ready. The exercises haven't been completed yet, and the environment will be set up during session 0.
 
-## Por dónde empezar
+## Where to start
 
-1. Leer [cómo trabajaremos](docs/metodo.md).
-2. Abrir la [sesión 0: preparar el entorno juntos](docs/00-empezar-juntos.md).
-3. Continuar con las sesiones [1](docs/01-donde-estan-los-bitcoins.md), [2](docs/02-seguir-un-pago.md) y [3](docs/03-de-pendiente-a-confirmado.md).
+1. Read [how we'll work](docs/learning-method.md).
+2. Open [session 0: getting started together](docs/00-getting-started-together.md).
+3. Continue with sessions [1](docs/01-where-are-the-bitcoins.md), [2](docs/02-following-a-payment.md), and [3](docs/03-from-pending-to-confirmed.md).
 
-Cada sesión tiene una pregunta, un experimento y una comprobación de lo aprendido. Los ejercicios no incluyen soluciones, funciones vacías ni interfaces que tenga que seguir. El diseño del código también forma parte del aprendizaje.
+Each session has a question, an experiment, and a way to check what I've learned. There are no solutions, empty functions, or prescribed interfaces. Designing the code is part of the exercise.
 
-## El recorrido
+## The course
 
-| Sesión | Pregunta | Material |
+| Session | Question | Material |
 | --- | --- | --- |
-| 0 | ¿Cómo preparo un entorno que entiendo y puedo volver a arrancar? | [Guía](docs/00-empezar-juntos.md) |
-| 1 | ¿Dónde están los bitcoins de una wallet? | [Guía](docs/01-donde-estan-los-bitcoins.md) |
-| 2 | ¿Qué ocurre cuando envío un pago? | [Guía](docs/02-seguir-un-pago.md) |
-| 3 | ¿Qué cambia cuando se confirma? | [Guía](docs/03-de-pendiente-a-confirmado.md) |
-| 4 | ¿Qué impide gastar dos veces lo mismo? | Por preparar |
-| 5 | ¿Qué autoriza una firma? | Por preparar |
-| 6 | ¿Cómo se representa una transacción en bytes? | Por preparar |
-| 7 | ¿Qué significa minar un bloque? | Por preparar |
-| 8 | ¿Cómo convergen dos nodos que conocen historias distintas? | Por preparar |
+| 0 | How do I set up an environment I understand and can restart? | [Guide](docs/00-getting-started-together.md) |
+| 1 | Where are a wallet's bitcoins? | [Guide](docs/01-where-are-the-bitcoins.md) |
+| 2 | What happens when I send a payment? | [Guide](docs/02-following-a-payment.md) |
+| 3 | What changes when it confirms? | [Guide](docs/03-from-pending-to-confirmed.md) |
+| 4 | What prevents spending the same output twice? | Not written yet |
+| 5 | What does a signature authorize? | Not written yet |
+| 6 | How is a transaction represented as bytes? | Not written yet |
+| 7 | What does mining a block mean? | Not written yet |
+| 8 | How do two nodes converge when they know different histories? | Not written yet |
 
-[Alcance y profundidad](docs/README.md) · [Progreso](docs/progreso.md) · [Puente a open source](docs/hacia-open-source.md)
+[Scope and depth](docs/README.md) · [Progress](docs/progress.md) · [Moving into open source](docs/contributing-to-open-source.md)
 
-## Qué habrá aquí
+## What goes here
 
 ```text
-docs/          Guías, recorrido y seguimiento
-experiments/   El código que vaya escribiendo durante las sesiones
-notes/         Mis predicciones, resultados y explicaciones
+docs/          Guides, course outline, and progress
+experiments/   Code I write during the sessions
+notes/         My predictions, results, and explanations
 ```
 
-La instalación se decide en la sesión 0. Todavía no hay dependencias Python, scripts de arranque ni una arquitectura elegida. Los datos del nodo y las wallets quedan fuera de Git.
+Installation choices are part of session 0. There are no Python dependencies, startup scripts, or predetermined architecture yet. Node data and wallets stay out of Git.
 
-## Referencias
+## References
 
-Las guías se apoyan en la documentación de Bitcoin Core y en ejercicios propios. *Programming Bitcoin*, de Jimmy Song, queda como referencia para profundizar; este repositorio no reproduce sus ejercicios ni sus soluciones.
+The guides use Bitcoin Core documentation and original exercises. *Programming Bitcoin*, by Jimmy Song, is a reference for going deeper; this repository does not reproduce its exercises or solutions.
 
-[Fuentes y documentación](docs/recursos.md)
+[Sources and documentation](docs/resources.md)

@@ -1,7 +1,7 @@
-# Notas del aprendizaje
+# Learning notes
 
-Aquí irán tus predicciones, errores y explicaciones. Todavía no se ha realizado ninguna sesión del recorrido.
+Your predictions, mistakes, and explanations will go here. No sessions in this course have been completed yet.
 
-Puedes copiar la [plantilla de sesión](../docs/plantilla-sesion.md) o usar una nota más corta. El tutor te ayuda a revisarla, pero las respuestas deben reflejar lo que tú has entendido.
+You can copy the [session template](../docs/session-template.md) or write a shorter note. The tutor helps you review it, but the answers should reflect your own understanding.
 
-Antes de publicar una nota, revisa los extractos: basta con los datos de prueba relevantes, sin credenciales ni archivos de wallet.
+Before publishing a note, review the excerpts: relevant test data is enough, without credentials or wallet files.
