@@ -1,0 +1,38 @@
+# Entorno y estado del laboratorio
+.local/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Credenciales y archivos de wallet: nunca forman parte de los ejercicios publicados
+.env
+.env.*
+!.env.example
+.cookie
+.cookie.tmp
+bitcoin.conf
+wallet.dat
+wallet.dat.*
+wallets/
+regtest/
+chainstate/
+blocks/
+indexes/
+*.pem
+*.key
+*.log
+
+# Archivos locales del editor y sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
