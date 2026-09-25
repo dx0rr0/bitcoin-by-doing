@@ -6,8 +6,8 @@ Prepared guides do not represent completed exercises. The initial state does not
 
 | Session | Material | Observed execution | Explanation and variation | Learner's note |
 | --- | --- | --- | --- | --- |
-| 0 | Ready | Pending | Pending | — |
-| 1 | Ready | Pending | Pending | — |
+| 0 | Ready | Regtest node, Python query, stop, and restart observed | Learner explained CLI versus node and confirmed state persistence | [session-00.md](../notes/session-00.md) |
+| 1 | Ready | At height 102, Alice `listunspent` sum = `getbalances.mine.trusted` = 100 BTC; Bob = 0 BTC | Learner identified outputs by `txid` and `vout`, explained coinbase maturity and the zero Bob balance; one-block variation changed Alice total from 50 to 100 BTC | [session-01.md](../notes/session-01.md) |
 | 2 | Ready | Pending | Pending | — |
 | 3 | Ready | Pending | Pending | — |
 | 4 | Goal defined | Pending | Pending | — |
@@ -18,7 +18,7 @@ Prepared guides do not represent completed exercises. The initial state does not
 
 ## Next step
 
-Open session 0 with the tutor, inspect the environment, and choose how to run Bitcoin Core in regtest. No installation route or exercise interface has been chosen yet.
+Start session 2 by tracing a payment from Alice to Bob. Keep the regtest state at height 102 and use the existing wallets.
 
 ## Questions to revisit
 
